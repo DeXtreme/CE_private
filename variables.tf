@@ -37,7 +37,7 @@ variable "private_subnet" {
 variable "instance_type" {
   type        = string
   description = "The instance type to create"
-  default     = "t2.micro"
+  default     = "r5a.large"
 }
 
 variable "ami" {

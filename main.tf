@@ -31,7 +31,7 @@ resource "aws_instance" "instance" {
   iam_instance_profile = aws_iam_instance_profile.instance.name
   instance_type        = var.instance_type
   ami                  = var.ami
-  
+
   ebs_block_device {
     device_name = local.ebs_device_name
     volume_type = "gp2"
